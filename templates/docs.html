@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de la API</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Documentación de la API</h1>
+        <h2>URL Base</h2>
+        <pre>http://127.0.0.1:5000</pre>
+
+        <h2>Endpoints</h2>
+
+        <div class="endpoint mb-4">
+            <h3>Inicializar Base de Datos</h3>
+            <pre>GET /db/init</pre>
+            <p>Inicializa la base de datos creando todas las tablas.</p>
+        </div>
+
+        <div class="endpoint mb-4">
+            <h3>Eliminar Tablas de la Base de Datos</h3>
+            <pre>GET /db/drop</pre>
+            <p>Elimina todas las tablas de la base de datos.</p>
+        </div>
+
+        <div class="endpoint mb-4">
+            <h3>Agregar un Personaje</h3>
+            <pre>
+POST /character/add
+POST /character/new
+POST /character
+            </pre>
+            <p>Agrega un nuevo personaje a la base de datos.</p>
+            <h4>Cuerpo de la Solicitud:</h4>
+            <pre>
+{
+    "character_id": 1,
+    "name": "Luke Skywalker",
+    "height": 172.0,
+    "mass": 77.0,
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": 1998
+}
+            </pre>
+        </div>
+
+        <div class="endpoint mb-4">
+            <h3>Obtener un Personaje por ID</h3>
+            <pre>
+GET /character/get/&lt;int:character_id&gt;
+GET /character/&lt;int:character_id&gt;
+            </pre>
+            <p>Recupera un personaje de la base de datos por su ID.</p>
+        </div>
+
+        <div class="endpoint mb-4">
+            <h3>Obtener Todos los Personajes</h3>
+            <pre>
+GET /character/getAll
+GET /character
+            </pre>
+            <p>Recupera todos los personajes de la base de datos.</p>
+        </div>
+
+        <div class="endpoint mb-4">
+            <h3>Eliminar un Personaje por ID</h3>
+            <pre>DELETE /character/delete/&lt;int:character_id&gt;</pre>
+            <p>Elimina un personaje de la base de datos por su ID.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

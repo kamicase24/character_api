@@ -1,0 +1,32 @@
+[
+  {
+    "height": 172.0,
+    "character_id": 1,
+    "mass": 77.0,
+    "skin_color": "fair",
+    "birth_year": 1998,
+    "name": "Luke Skywalker",
+    "hair_color": "blond",
+    "eye_color": "blue"
+  },
+  {
+    "height": 188.0,
+    "character_id": 2,
+    "mass": 120.0,
+    "skin_color": "pale",
+    "birth_year": 1977,
+    "name": "Dark Vader",
+    "hair_color": "bald",
+    "eye_color": "yellow"
+  },
+  {
+    "height": 155.0,
+    "character_id": 3,
+    "mass": 51.0,
+    "skin_color": "fair",
+    "birth_year": 1977,
+    "name": "Leia Organa",
+    "hair_color": "brown",
+    "eye_color": "brown"
+  }
+]

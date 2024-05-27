@@ -1,0 +1,96 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "pi_api",
+    "collectionId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+    "dateExported": "2024-05-27T03:10:30.854Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "c7d25dde-0171-460f-bd44-2c0035380d38",
+            "name": "db",
+            "containerId": "",
+            "created": "2024-05-27T01:27:15.268Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6f7fe6ee-ba50-4b48-8ea8-6c1a948f7c06",
+            "name": "character",
+            "containerId": "",
+            "created": "2024-05-27T01:27:21.839Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e4d8d00b-ca32-4121-b142-611a35c39cf5",
+            "colId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+            "containerId": "c7d25dde-0171-460f-bd44-2c0035380d38",
+            "name": "db_init",
+            "url": "localhost:5000/db/init",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-27T01:24:24.433Z",
+            "modified": "2024-05-27T01:25:02.132Z",
+            "headers": []
+        },
+        {
+            "_id": "95aa7e3e-4553-4131-9172-996cd32ec57f",
+            "colId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+            "containerId": "6f7fe6ee-ba50-4b48-8ea8-6c1a948f7c06",
+            "name": "get_all",
+            "url": "localhost:5000/character/getAll",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-27T01:24:56.442Z",
+            "modified": "2024-05-27T03:10:25.490Z",
+            "headers": []
+        },
+        {
+            "_id": "41dc6ec0-1d3d-4b52-848c-2de31def5911",
+            "colId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+            "containerId": "6f7fe6ee-ba50-4b48-8ea8-6c1a948f7c06",
+            "name": "get",
+            "url": "localhost:5000/character/get/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-27T01:25:41.507Z",
+            "modified": "2024-05-27T01:52:00.188Z",
+            "headers": []
+        },
+        {
+            "_id": "d48c40f5-49dc-408e-8c7d-885a5f412b3b",
+            "colId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+            "containerId": "6f7fe6ee-ba50-4b48-8ea8-6c1a948f7c06",
+            "name": "add",
+            "url": "localhost:5000/character/add",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-27T01:26:26.481Z",
+            "modified": "2024-05-27T02:10:39.414Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"character_id\": 3,\n    \"name\": \"Leia Organa\",\n    \"height\": 155,\n    \"mass\": 51,\n    \"skin_color\": \"fair\",\n    \"birth_year\": 1998,\n    \"hair_color\": \"brown\",\n    \"eye_color\": \"brown\"\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "61ed123b-9a19-4e41-b253-39c42ab11f15",
+            "colId": "04e485b9-fae7-4b8a-910d-bda2d64b2e78",
+            "containerId": "6f7fe6ee-ba50-4b48-8ea8-6c1a948f7c06",
+            "name": "delete",
+            "url": "localhost:5000/character/delete/3555",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-27T01:26:58.353Z",
+            "modified": "2024-05-27T02:43:36.287Z",
+            "headers": []
+        }
+    ],
+    "ref": "Lx7GuDQk4_Ew39vmPU5mKsRE-qgEWKDP0iu0om2AtbJHZmHhs22j0jIdmVevSRk0f6hI0tZiI_zmUmVf6HuWJg"
+}
